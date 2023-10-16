@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/fonts/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fonts/css/brands.css" rel="stylesheet">
+        <link href="css/fonts/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>Bolleoppskrifter</title>
+    </head>
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <a href="#" id="logo">Logo</a>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h1>Bolleoppskrifter</h1>
+                <!-- button kun vis du vil at noe skjer -->
+                <a href="#" class="black-btn">Read more</a>
+            </section>
+        </header>
+        <main>
+            <!-- section 1 -->
+            <section class="flex-section">
+                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
+                <section>
+                    <h2>Lorem ipsum</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </section>
+            </section>
+            <!-- section 2 -->
+            <section class="flex-section right">
+                <img src="https://placehold.co/600x400" alt="Grå placeholder bilde">
+                <section>
+                    <h2>Lorem ipsum</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </section>
+            </section>
+            <!-- section 3 -->
+            <section>
+                <h2>Services</h2>
+                <article>
+                    <h3>Lorem impsum</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </article>
+                <article>
+                    <h3>Lorem impsum</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </article>
+                <article>
+                    <h3>Lorem impsum</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+        </footer>
+        </div>
+        <!-- opprett egen java doc og så linke til denne, skrives helt nederst, html må bli lest først! -->
+        <script>
+
+            let x = document.querySelector(".navbar")
+
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className +=" responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+
+        </script>
+    </body>
+
+</html>
