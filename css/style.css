@@ -71,7 +71,20 @@ main section img{
 footer{
     grid-area: footer;
 }
+
+#services{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    padding: 1rem;
+    justify-content: space-around;
+
+}
 @media only screen and (min-width:600px){
+    #grid-container{
+        grid-template-areas: "header header header" ". main ." "footer footer footer";
+    }
+    
     .navbar{
         display: flex;
         flex-direction: row;
@@ -85,13 +98,15 @@ footer{
     .flex-section{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
     .flex-section img{
         width: 50%;
     }
     .flex-section section{
-        width: 50%;
+        width: 40%;
         align-self: center;
+        padding: 1rem;
     }
     .right img{
         order: 1;
