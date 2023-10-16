@@ -75,14 +75,24 @@ footer{
 #services{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: beige;
     padding: 1rem;
     justify-content: space-around;
 
 }
+#services h2{
+    width: 100%;
+    text-align: center;
+}
+#services article{
+    max-width: 300px;
+    width: 100%;
+    min-width: 200px;
+}
 @media only screen and (min-width:600px){
     #grid-container{
-        grid-template-areas: "header header header" ". main ." "footer footer footer";
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
     }
     
     .navbar{
